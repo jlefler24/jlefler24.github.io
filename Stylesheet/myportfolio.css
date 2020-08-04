@@ -152,7 +152,8 @@ html {
 	vertical-align: middle;
 	height: auto;
 	box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, .75);
-	width: auto;
+	width:  400px;
+    height: 500px;
   }
   
   
@@ -249,14 +250,14 @@ html {
 	  width: 50%; /* This ensures one column takes up half the page width */
 	  padding: 1.6%; 
 	  background-color: #f2f2f2a1; 
-	  height: 448px; /* You may need to adjust this to fit your content */
+	  height: 400px; /* You may need to adjust this to fit your content */
   }
   
   .Column_2 {
 	  float: left;
 	  width: 50%;
 	  padding: 1.6%;
-	  height: 448px; /* You may need to adjust this to fit your content */
+	  height: 400px; /* You may need to adjust this to fit your content */
 	  background-color: #4d4d4d;
   }
   
