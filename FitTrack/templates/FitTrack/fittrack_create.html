@@ -1,0 +1,20 @@
+{% extends 'FitTrack/fittrack_base.html' %}
+{% load staticfiles %}
+{% block templatecontent %}
+    <section>
+        <div class="flex-container">
+            <form method="post">
+                {% csrf_token %}
+                    <table>
+                        {{ form.as_table }}
+                    </table>
+                {{ form.non_field_errors }}
+                <button class="primary-bright-button" type="submit">Create Workout</button>
+            </form>
+            <hr />
+            <button class="primary-bright-button" type="button" onclick=" location.href='{% url 'listWorkouts' %}'">Back to Workouts
+            </button>
+        </div>
+    </section>
+{% endblock %}
+

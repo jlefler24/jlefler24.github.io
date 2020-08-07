@@ -1,0 +1,168 @@
+/* Styling for FitTrack */
+.cover-fittrack-home {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./images/Fithome.jpg') right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+
+.FitTrack button{
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border: 1px solid var(--dark);
+      background: transparent;
+      color: var(--dark);
+      text-decoration: none;
+      transition: 0.3s;
+  }
+.FitTrack button:hover {
+    background: var(--dark);
+    color: white;
+  }
+
+.FitTrack table{
+      width: 75%;
+      align: center;
+      margin: 20px auto;
+      border: 40px 20px 10px 20px;
+  }
+
+.FitTrack hr{
+      color: var(--lightGray);
+      border-top-width: 2px;
+      margin: 2px;
+  }
+
+.FitTrack h4{
+      color: var(--midtone);
+      text-align: center;
+      text-shadow: 2px 2px var(--standout);
+  }
+
+.FitTrack select, label{
+      color: white;
+      background: var(--dark);
+      display: flex;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 1.3em;
+  }
+
+#FitTrackPic{
+      text-align: center;
+      position: relative;
+      padding:0;
+  }
+
+#FitTrackPic span{
+      width: 100%;
+  }
+.FitTrack_top {
+   background:transparent!important;
+      display:inline-block;
+      padding:2px 3px;
+      position:relative;
+      top: -230px;
+      width:100%;
+      color: var(--neutral);
+      text-shadow: 2px 2px 5px var(--dark);
+  }
+
+.FitTrack_center{
+      display:inline-block;
+      padding:2px 3px;
+      color: var(--dark);
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      text-align: center;
+      line-height:1.5em;
+      font-size: 1.4em;
+  }
+.FitTrack_caption{
+      background:var(--contrast);
+      color:var(--lightGray)
+      text-decoration:none;
+      padding:4px 6px;
+      font-family: Montserrat Helvetica, Ubuntu, Roboto, Noto, Arial, sans-serif;
+      font-size:18px;
+      font-weight:bold;
+      line-height:1.2;
+      display:inline-block;
+      position: absolute;
+      right: 25%;
+  }
+
+  #FitTrackworkoutsPage {
+      padding: 20px;
+  }
+
+   #FitTrackworkoutsPage table th
+   {
+      background:var(--dark);
+      color: white;
+      text-align:center;
+      font-size: 20px;
+  }
+
+   #FitTrackworkoutsPage table td
+   {
+       background:var(--dark);
+       color: white;
+       text-align:center;
+       font-size: 18px;
+  }
+
+  #info-button {
+      background: white;
+      color: var(--dark);
+
+ }
+
+  #info-button:hover {
+      background: var(--dark);
+      color: white;
+ }
+
+    #WorkoutDetailPage table th
+   {
+      background:var(--dark);
+      color: white;
+      text-align:center;
+      font-size: 22px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: solid 2px black;
+  }
+
+  #WorkoutDetailPage table td
+   {
+       background:var(--gray);
+       color: white;
+       text-align:center;
+       font-size: 18px;
+       border: solid 2px black;
+  }
+  #WorkoutDetailPage .primary-bright-button {
+      background: var(--dark);
+      color: white;
+
+  }
+
+  #WorkoutDetailPage .primary-bright-button {
+      background: var(--dark);
+      color: white;
+
+  }
+
+  #FitTrackworkoutsPage .primary-bright-button{
+      background: var(--dark);
+      color: white;
+
+  }
+
+  #FitTrackworkoutsPage .primary-bright-button{
+      background: var(--dark);
+      color: white;

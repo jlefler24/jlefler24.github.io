@@ -1,0 +1,40 @@
+{% extends 'FitTrack/fittrack_base.html' %}
+{% load staticfiles %}
+{% block templatecontent %}
+<section>
+    <div class="flex-container fittrack text-center" id="WorkoutDetailPage">
+        <table>
+            <br><br/>
+            <tr>
+                <th>Date: </th>
+                <td>{{workout.date}}</td>
+            </tr>
+            <tr>
+                <th>Name: </th>
+                <td>{{workout.name}}</td>
+            </tr>
+            <tr>
+                <th>Exercise: </th>
+                <td>{{workout.exercises}}</td>
+            </tr>
+            <tr>
+                <th>Sets: </th>
+                <td>{{workout.sets}}</td>
+            </tr>
+            <tr>
+                <th>Reps: </th>
+                <td>{{workout.reps}}</td>
+            </tr>
+            <tr>
+                <th>Weight: </th>
+                <td>{{workout.weight}}</td>
+            </tr>
+        </table>
+
+        <hr />
+        <button class="primary-bright-button" type="button" onclick=" location.href='{% url 'editWorkout' workout.pk %}'">Edit Workout History</button>
+        <button class="primary-bright-button"  type="button" onclick=" location.href='{% url 'listWorkouts' %}'">Back to Workouts</button><br>
+        <br/>
+    </div>
+</section>
+{% endblock %}

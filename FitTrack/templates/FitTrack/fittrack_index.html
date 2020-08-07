@@ -1,0 +1,32 @@
+{% extends 'FitTrack/fittrack_base.html' %}
+{% load staticfiles %}
+{% block templatecontent %}
+    <section>
+        <div class="flex-container fittrack text-center" id=FitTrackworkoutsPage>
+            <table class="table table-striped">
+                    <tr>
+                        <th class="col-md">Date</th>
+                        <th class="col-md">Name</th>
+                        <th class="col-md">Exercise</th>
+                        <th class="col-md">Sets</th>
+                        <th class="col-md">Reps</th>
+                        <th class="col-md">Weight</th>
+                        <th class="col-md">Info</th>
+                    </tr>
+                {% for workout in workouts %}     <!-- creates a new row for each workout-->
+                    <tr>
+                        <td class="col-md">{{ workout.date }}</td>
+                        <td class="col-md">{{ workout.name }}</td>
+                        <td class="col-md">{{ workout.exercises }}</td>
+                        <td class="col-md">{{ workout.sets }}</td>
+                        <td class="col-md">{{ workout.reps }}</td>
+                        <td class="col-md">{{ workout.weight }}</td>
+                        <td class="col-md"><a href="{{workout.pk}}/Details"><button class="primary-light-button" id="info-button">Details</button></a></td>
+                        <!--directs to details page with the selected instance-->
+                    </tr>
+                {% endfor %}
+            </table>
+            <button class="primary-bright-button" type="button" onclick="location.href='{% url 'create' %}'">Create Workout </button>
+        </div>
+    </section>
+{% endblock %}

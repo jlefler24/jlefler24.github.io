@@ -1,0 +1,17 @@
+{% extends 'FitTrack/fittrack_base.html' %}
+{% block header %} Confirmation of Delete {% endblock %}
+{% block templatecontent %}
+
+<form method='POST'>
+    {% csrf_token %}
+
+    <h3>Are you certain that you want to delete this information?</h3>
+    <p> You are about to delete {{ workout.title }}.</p>
+
+    {{ workout.as_p }}
+
+    <input type="submit" value="Delete Entry" class="primary-bright-button" >
+    <a href="{% url 'editWorkout' pk=workout.pk %}"><button class="primary-bright-button" type="button" >Return back to edit</button></a>
+</form>
+
+{% endblock %}
